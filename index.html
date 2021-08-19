@@ -8,26 +8,32 @@
     <title>Serpent VPN</title>
   </head>
   <body>
-    <header>
-      <h1>
-        <a>
-          <img src="./assets/logo.svg" alt="" srcset="" />
+    <header class="masthead">
+      <h1 class="masthead__heading">
+        <a class="masthead__heading--logo">
+          <img src="./assets/logo.svg" alt="logo serpent vpn" />
         </a>
       </h1>
-      <nav role="navigation">
-        <ul role="list">
-          <li><a href="feature">Feature</a></li>
-          <li><a href="apps">Apps</a></li>
-          <li><a href="Our_team">Our Team</a></li>
-          <li><a href="custommer_support">Custommer Support</a></li>
+      <nav role="navigation" class="masthead__navigation">
+        <ul role="list" class="masthead__navigation--list">
+          <li class="navigation__list--item"><a href="feature">Feature</a></li>
+          <li class="navigation__list--item"><a href="apps">Apps</a></li>
+          <li class="navigation__list--item">
+            <a href="Our_team">Our Team</a>
+          </li>
+          <li class="navigation__list--item">
+            <a href="custommer_support">Custommer Support</a>
+          </li>
         </ul>
       </nav>
-      <button role="button" type="button">Try it free</button>
+      <button role="button" type="button" class="masthead__trial">
+        Try it free
+      </button>
     </header>
     <main role="main">
-      <section>
-        <article>
-          <figure>
+      <section class="world-best">
+        <article class="world-best__container">
+          <figure class="world-best__wrapper">
             <img src="./assets/logo_cloud.svg" alt="logo cloud" />
           </figure>
           <header>
@@ -46,7 +52,10 @@
         <aside>
           <ul>
             <li>
-              <img src="" alt="lock down cloud" srcset="role" />
+              <img
+                src="./assets/icon_infrastructure.svg"
+                alt="lock down cloud"
+              />
               <h4>Lock Down Cloud Infrastructure</h4>
               <p>
                 Reduce the number of attack vectors on your public cloud
@@ -54,7 +63,10 @@
               </p>
             </li>
             <li>
-              <img src="" alt="protect against vulnerable" srcset="role" />
+              <img
+                src="./assets/icon_vulnerabilities.svg"
+                alt="protect against vulnerable"
+              />
               <h4>Protect Agaisnt Vulnerabilities</h4>
               <p>
                 Protect your cloud servers agaisnt scanning for open SSH
@@ -62,7 +74,10 @@
               </p>
             </li>
             <li>
-              <img src="" alt="secure third-party service" srcset="role" />
+              <img
+                src="./assets/icon_third_party.svg"
+                alt="secure third-party service"
+              />
               <h4>Secure Third-Party Services</h4>
               <p>
                 Lock down access to third-party services, such as Saleforce, to

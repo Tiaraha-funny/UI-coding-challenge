@@ -1,0 +1,47 @@
+.masthead {
+  background-color: #f5f6f8;
+  padding: 10px;
+}
+
+.masthead__navigation {
+}
+
+.masthead__navigation--list {
+  @include flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation__list--item > a {
+  font-size: 18px;
+  color: #66666666;
+  font-weight: 600;
+}
+
+.masthead__trial {
+  display: none;
+}
+
+@media (min-width: $query) {
+  .masthead {
+    @include flex;
+    align-items: center;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+
+  .masthead__navigation {
+    width: 700px;
+  }
+
+  .masthead__trial {
+    display: block;
+    background-color: #f88e15;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}

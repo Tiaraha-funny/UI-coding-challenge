@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Summary --- This coding challenge is designed to determine your proficiency in responsive web development.",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
   "scripts": {
     "scss": "node-sass scss -o webroot/css",
     "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
